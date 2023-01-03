@@ -193,7 +193,7 @@ transform: rotate(-90deg);
   position: absolute;
   right: 20px;
   top: -15px;   
-  transition: transform 300ms;
+  transition: transform 300ms ease;
 }
 
 main section h3 {
@@ -205,6 +205,9 @@ header ul {
 }
 
 body form #username:invalid {
+  border: 1px solid red;
+}
+main.login form #txfUser:invalid {
   border: 1px solid red;
 }
 
@@ -318,7 +321,7 @@ form.formregister{
   }
 
   main section .products article{
-      width: 45%;
+      width: 48%;
   }
 }
 
